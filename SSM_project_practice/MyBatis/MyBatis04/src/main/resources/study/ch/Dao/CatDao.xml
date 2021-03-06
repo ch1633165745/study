@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="study.ch.Dao.CatDao">
+    <!--查询-->
+    <!--resultType指定方法返回值类型，使用默认的规则：属性名与列明一一对应
+        resultMap 查出的数据使用下面的mycat规则来进行封装-->
+    <select id="getCatById" resultMap="mycat">
+        <!--方式一，sql语句中起别名（sql列名和类属性名不一样），sql中不区分大小写，-->
+        <!--select id,cname name,cgender gender,cage age from t_cat where id = #{id}-->
+        <!--方式二，自己定义每一列数据和javaBean的映射规则-->
+        select * from t_cat where id = #{id}
+    </select>
+    <!--方式二，自己定义每一列数据和javaBean的映射规则
+        id:唯一标识
+        type:指定为哪个javabean自定义封装规则-->
+    <resultMap id="mycat" type="study.ch.Bean.Cat">
+        <!--指定主键列的对应
+            column="id"指定主键列为id,sql中的
+            property="id"，指定cat哪个属性与之对应，类中的-->
+        <id column="id" property="id"/>
+        <!--普通列
+            column="列名"指定sql中的哪个列,sql中的
+            property="属性名"，指定cat哪个属性与之对应，类中的-->
+        <result column="cName" property="name"/>
+        <result column="cGender" property="gender"/>
+        <result column="cAge" property="age"/>
+    </resultMap>
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!--targetRuntime="MyBatis3"生成复杂的增删改查代码
+        targetRuntime="MyBatis3Simple生成简单的增删改查代码-->
+    <context id="DB2Tables" targetRuntime="MyBatis3Simple">
+        <!--jdbcConnection指导连接到哪个数据库-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/mybatis"
+                        userId="root"
+                        password="1234">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!--javaModelGenerator：生成pojo
+            targetPackage生成的pojo放在哪个包
+            targetProject:放在哪个工程下(当前工程的src下的\main\java\study\ch\Bean)-->
+        <javaModelGenerator targetPackage="study.ch.Bean" targetProject=".\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!--sqlMapGenerator：sql映射文件生成器指定xml文件生成的地方-->
+        <sqlMapGenerator targetPackage="mybatis.mapper"  targetProject=".\src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!--生成DAO接口的-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="study.ch.Dao"  targetProject=".\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        <!--table指定要逆向生成哪些表
+            tableName:写表名
+            domainObjectName：这个表对应的对象名字
+            -->
+        <table tableName="t_teacher" domainObjectName="Teacher" >
+        </table>
+
+    </context>
+</generatorConfiguration>

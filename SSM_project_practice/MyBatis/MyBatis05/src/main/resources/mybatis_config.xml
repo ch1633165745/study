@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--导入连接数据相关信息文件-->
+    <properties resource="dbconfig.properties"/>
+
+    <!--配置分布查询，延迟按需加载-->
+    <settings>
+        <!--配置对象延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--配置属性按需加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+        <setting name="logImpl" value="LOG4J" />
+    </settings>
+
+    <!--配置连接数据库-->
+    <environments default="school"><!--表示默认使用的是下面配置的哪个数据库环境（可配置多个）-->
+        <!--配置school数据库环境-->
+        <environment id="school">
+            <transactionManager type="JDBC"></transactionManager>
+            <!--配置数据库连接池-->
+            <dataSource type="POOLED">
+                <!--取出配置文件中的值-->
+                <property name="driver" value="${driverClass}"/>
+                <property name="url" value="${jdbcurl}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--引入自己编写的接口实现.xml文件,package包下的所有文件-->
+    <mappers>
+        <package name="study.ch"/>
+    </mappers>
+
+</configuration>

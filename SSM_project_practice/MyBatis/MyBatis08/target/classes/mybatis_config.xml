@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--开启log4j日志-->
+        <setting name="logImpl" value="LOG4J" />
+    </settings>
+
+    <!--分页查询插件配置-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
+    <!--配置连接数据库-->
+    <environments default="mybatis"><!--表示默认使用的是下面配置的哪个数据库环境（可配置多个）-->
+        <!--配置mybatis数据库环境-->
+        <environment id="mybatis">
+            <transactionManager type="JDBC"></transactionManager>
+            <!--配置数据库连接池-->
+            <dataSource type="POOLED">
+                <!--取出配置文件中的值-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="1234"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--引入自己编写的接口实现.xml文件,package包下的所有文件-->
+    <mappers>
+        <package name="study.ch.Dao"/>
+    </mappers>
+
+</configuration>

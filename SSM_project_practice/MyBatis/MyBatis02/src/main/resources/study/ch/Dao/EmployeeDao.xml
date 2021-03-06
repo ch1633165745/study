@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="study.ch.Dao.EmployeeDao">
+    <!--查询-->
+    <!--select标签定义查询操作，
+    id方法名，
+    resultType指定方法返回值类型（查询操作必须指定）
+    #{id}传过来的id值-->
+    <select id="getEmpById" resultType="study.ch.Bean.Employee">
+    <!--sql语句不要写分号-->
+    select * from t_employee where id = #{id}
+  </select>
+
+    <!--修改-->
+    <!--增删改不用写返回值类型，只需要id
+        #{}直接从传入的对象取出相应的属性名-->
+    <update id="updateEmp">
+        update t_employee
+                set  empName=#{empName}, gender=#{gender},email=#{email}
+                where id=#{id}
+    </update>
+
+    <!--删除
+        方法返回类型为boolean表示删除是否成功-->
+    <delete id="deleteEmp">
+        delete from  t_employee where id = #{id}
+    </delete>
+
+    <!--增加-->
+    <insert id="insertEmp">
+        insert into t_employee(empName,gender,email)
+            values (#{empName},#{gender},#{email})
+    </insert>
+
+    <!--查询，多个参数-->
+    <select id="getEmpByIdAndName" resultType="study.ch.Bean.Employee">
+        <!--sql语句不要写分号-->
+        select * from t_employee where id = #{id} and empName=#{empName}
+    </select>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="work.ch.Dao.studentDao">
+
+    <!--查询一:根据所有查询-->
+    <select id="getAllStu" resultMap="stu">
+        select * from student
+    </select>
+
+    <!--添加数据-->
+    <insert id="addStu">
+        INSERT INTO `student`(`student_id`,`student_name`,`gender`,`class_name`)
+        VALUES (#{studentId},#{studentName},#{gender},#{className})
+    </insert>
+
+    <!--自定义的结果集-->
+    <resultMap id="stu" type="work.ch.Pojo.Student">
+        <id property="id" column="id"/>
+        <result property="studentId" column="student_id"/>
+        <result property="studentName" column="student_name"/>
+        <result property="gender" column="gender"/>
+        <result property="className" column="class_name"/>
+    </resultMap>
+</mapper>

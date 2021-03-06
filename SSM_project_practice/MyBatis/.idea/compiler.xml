@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="逆向工程MBG" />
+        <module name="起别名和联合查询" />
+        <module name="返回多条数据list和map" />
+        <module name="MyBatis" />
+        <module name="动态sql" />
+        <module name="联合查询练习" />
+        <module name="缓存" />
+        <module name="MyBatis01" />
+        <module name="简单的增删改查（一条数据）" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

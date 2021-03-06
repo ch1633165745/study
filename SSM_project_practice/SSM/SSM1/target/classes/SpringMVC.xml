@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--扫描组件（只扫描带有@Controller注解的组件），use-default-filters不使用默认的过滤规则-->
+    <context:component-scan base-package="study.ch.controller" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--添加视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <!--前缀-->
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <!--后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--配置文件上传解析器（MultipartResolver）-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--限制文件上传的最大量，20MB-->
+        <property name="maxUploadSize" value="#{1024*1024*20}"></property>
+        <!--默认字符编码-->
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+
+    <!--告诉springmvc，自己映射自己处理就行，不能处理的交给Tomcat-->
+    <!--扫描静态资源-->
+    <mvc:default-servlet-handler/>
+    <!--扫描动态资源-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+</beans>

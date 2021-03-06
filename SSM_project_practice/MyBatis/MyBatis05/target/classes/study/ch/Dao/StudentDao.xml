@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="study.ch.Dao.StudentDao">
+    <select id="getSById" resultMap="stu">
+        select * from student where id=#{id}
+    </select>
+    <resultMap id="stu" type="study.ch.Bean.Student">
+        <!--property:类的属性名-->
+        <!--column:sql的列名-->
+        <id property="id" column="id"/>
+        <result property="sname" column="name"/>
+        <!--select:告诉mybatis自己取调用TeacherDao的查询方法，值为student表中的teacherid-->
+        <association property="teacher" select="study.ch.Dao.TeacherDao.getTById" column="teacherid" fetchType="lazy"/>
+    </resultMap>
+</mapper>

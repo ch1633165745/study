@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46775ce7-2455-4be5-beaa-777c330ac5a6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\tool_maven_git\MavenRepository" />
+        <option name="mavenHome" value="F:\tool_maven_git\apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oc1EpqwWKEiD5Ddtwp09r8feiM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyBatis08/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15527344" />
+    <property name="project.structure.side.proportion" value="0.36342594" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Workspace\MyBatis\MyBatis08\src\main\resources\study\ch\Dao" />
+      <recent name="F:\Workspace\MyBatis\MyBatis05\src\main\resources" />
+      <recent name="F:\Workspace\MyBatis\MyBatis06\src\main\resources\study\Dao" />
+      <recent name="F:\Workspace\MyBatis\MyBatis06\src\main\resources\study" />
+      <recent name="F:\Workspace\MyBatis\MyBatis05\src\main\resources\study\ch\Dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Workspace\MyBatis\MyBatis08\src\main\resources" />
+      <recent name="F:\Workspace\MyBatis\MyBatis07\src\main\resources" />
+      <recent name="F:\Workspace\MyBatis\MyBatis07\src\main\resources\study\ch\Dao" />
+      <recent name="F:\Workspace\MyBatis\MyBatis06\src\main\resources" />
+      <recent name="F:\Workspace\MyBatis\MyBatis05\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="study.ch" />
+      <recent name="" />
+      <recent name="study.ch.Bean" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="study.ch.Bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Test.test02">
+    <configuration name="Teat.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="缓存" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Teat" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teat.Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="缓存" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Teat" />
+      <option name="METHOD_NAME" value="Test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teat.Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="缓存" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Teat" />
+      <option name="METHOD_NAME" value="Test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="逆向工程MBG" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="逆向工程MBG" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test.test02" />
+        <item itemvalue="JUnit.Test.test01" />
+        <item itemvalue="JUnit.Teat.Test3" />
+        <item itemvalue="JUnit.Teat.Test2" />
+        <item itemvalue="JUnit.Teat.Test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46775ce7-2455-4be5-beaa-777c330ac5a6" name="Default Changelist" comment="" />
+      <created>1613570958102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613570958102</updated>
+      <workItem from="1613570959340" duration="1978000" />
+      <workItem from="1613609815280" duration="331000" />
+      <workItem from="1613611929980" duration="2572000" />
+      <workItem from="1613616374386" duration="4376000" />
+      <workItem from="1613631442280" duration="893000" />
+      <workItem from="1613632344003" duration="927000" />
+      <workItem from="1613633386042" duration="359000" />
+      <workItem from="1613633753458" duration="3603000" />
+      <workItem from="1613657008731" duration="6422000" />
+      <workItem from="1613695587953" duration="1816000" />
+      <workItem from="1613724857576" duration="1197000" />
+      <workItem from="1613743230318" duration="66000" />
+      <workItem from="1613785578484" duration="5946000" />
+      <workItem from="1613794117117" duration="139000" />
+      <workItem from="1613794265009" duration="581000" />
+      <workItem from="1613803363675" duration="4309000" />
+      <workItem from="1613824521638" duration="2329000" />
+      <workItem from="1613891748587" duration="8328000" />
+      <workItem from="1613980076298" duration="1116000" />
+      <workItem from="1613994270752" duration="5336000" />
+      <workItem from="1614090174766" duration="4083000" />
+      <workItem from="1614132295828" duration="13430000" />
+      <workItem from="1614161354284" duration="8701000" />
+      <workItem from="1614172742381" duration="78000" />
+      <workItem from="1614172830193" duration="70000" />
+      <workItem from="1614172908523" duration="2259000" />
+      <workItem from="1614226739681" duration="5704000" />
+      <workItem from="1614257204041" duration="3084000" />
+      <workItem from="1614321902676" duration="4698000" />
+      <workItem from="1614336435531" duration="6604000" />
+      <workItem from="1614387154839" duration="11197000" />
+      <workItem from="1614425526641" duration="1183000" />
+      <workItem from="1614484903469" duration="807000" />
+      <workItem from="1614492761472" duration="10324000" />
+      <workItem from="1614592659673" duration="7649000" />
+      <workItem from="1614756094914" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="138" key="#HTTP_Proxy" timestamp="1614236839574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="539" y="138" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1614236839574" />
+    <state x="179" y="254" key="#SQL_Dialects" timestamp="1613663630703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="179" y="254" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1613663630703" />
+    <state x="508" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614001966624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="508" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1614001966624" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1614172395373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1614172395373" />
+    <state x="386" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1613612015522">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="386" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1613612015522" />
+    <state x="428" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1614400167181">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1614400167181" />
+    <state x="370" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1613632142317">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="370" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613632142317" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614756139415">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614756139415" />
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1614611976988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614611976988" />
+    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1614611976988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614611976988" />
+    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1614611976988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614611976988" />
+    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1614611976988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614611976988" />
+    <state width="1493" height="251" key="GridCell.Tab.1.bottom" timestamp="1614416372865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614416372865" />
+    <state width="1493" height="251" key="GridCell.Tab.1.center" timestamp="1614416372865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1614416372865" />
+    <state width="1493" height="251" key="GridCell.Tab.1.left" timestamp="1614416372865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1614416372865" />
+    <state width="1493" height="251" key="GridCell.Tab.1.right" timestamp="1614416372865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1614416372865" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1613630724043">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1613630724043" />
+    <state x="326" y="0" key="SettingsEditor" timestamp="1614592711333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="326" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614592711333" />
+    <state x="490" y="154" width="543" height="524" key="StructurePopup" timestamp="1614601744712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="543" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1614601744712" />
+    <state width="498" height="448" key="SwitcherDM" timestamp="1613663595192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="448" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1613663595192" />
+    <state width="988" height="419" key="XDebugger.FullValuePopup" timestamp="1614406735031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="988" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1614406735031" />
+    <state x="178" y="73" key="new project wizard" timestamp="1614756140560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1614756140560" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614605198905">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614605198905" />
+  </component>
+</project>

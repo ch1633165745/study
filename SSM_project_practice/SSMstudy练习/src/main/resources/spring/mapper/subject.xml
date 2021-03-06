@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="work.ch.Dao.subjectDao">
+
+    <!--查询一:根据所有查询-->
+    <select id="getAllSub" resultMap="sub">
+        select * from subject
+    </select>
+    <!--添加课程-->
+    <insert id="addSub">
+        INSERT INTO `subject`(`subject_id`,`subject_name`)
+        VALUES (#{subjectId},#{subjectName})
+    </insert>
+
+
+    <!--自定义的结果集-->
+    <resultMap id="sub" type="work.ch.Pojo.Subject">
+        <id property="id" column="id"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="subjectName" column="subject_name"/>
+    </resultMap>
+</mapper>

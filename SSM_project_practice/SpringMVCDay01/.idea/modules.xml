@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC06/Ajax.iml" filepath="$PROJECT_DIR$/SpringMVC06/Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC05RestCrud/RestfulCRUD的案例练习.iml" filepath="$PROJECT_DIR$/SpringMVC05RestCrud/RestfulCRUD的案例练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC01/SpringMVC01.iml" filepath="$PROJECT_DIR$/SpringMVC01/SpringMVC01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC02/SpringMVC02.iml" filepath="$PROJECT_DIR$/SpringMVC02/SpringMVC02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC03/SpringMVC03.iml" filepath="$PROJECT_DIR$/SpringMVC03/SpringMVC03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC04/SpringMVC04.iml" filepath="$PROJECT_DIR$/SpringMVC04/SpringMVC04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCDay01.iml" filepath="$PROJECT_DIR$/SpringMVCDay01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC09/Spring和SpringMVC整合.iml" filepath="$PROJECT_DIR$/SpringMVC09/Spring和SpringMVC整合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC08/异常处理.iml" filepath="$PROJECT_DIR$/SpringMVC08/异常处理.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC07/文件上传.iml" filepath="$PROJECT_DIR$/SpringMVC07/文件上传.iml" />
+    </modules>
+  </component>
+</project>

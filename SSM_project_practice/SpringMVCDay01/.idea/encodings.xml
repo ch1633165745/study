@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/SSM/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SSM/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC04/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC04/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC05RestCrud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC05RestCrud/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC06/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC06/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC07/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC08/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC08/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC09/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC09/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

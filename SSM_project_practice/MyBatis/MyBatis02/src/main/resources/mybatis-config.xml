@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--引入外部配置文件,resource参数表示类路径下，url表示磁盘路径，这边用的类路径-->
+    <properties resource="dbconfig.properties"></properties>
+    <!--default="development"默认使用哪个环境-->
+    <environments default="development">
+        <!--id="development"为当前环境的唯一标识-->
+        <!--environment可配置多个环境，可以有测试环境使用自己的测试数据库，有运行环境使用自己的运行数据库等-->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!--配置数据库连接池-->
+            <dataSource type="POOLED">
+                <!--取出配置文件中的值-->
+                <property name="driver" value="${driverClass}"/>
+                <property name="url" value="${jdbcurl}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!--引入自己编写的接口实现.xml文件-->
+    <mappers>
+        <!--一、mapper注册单个
+            resource表示从类路径下找资源
+            url表示磁盘路径或网络路径
+            class表示通过全类名找资源，但是要注意其.java文件和.xml文件要在通用路径下-->
+        <!--mapper resource="EmployeeDao.xml"/-->
+        <!--注册多个，批量注册
+            注意：类路径下包名（放.xml文件EmployeeDao的配置文件）
+            和程序路径下包名要一样（放.java文件EmployeeDao的接口）-->
+        <package name="study.ch.Dao"/>
+
+    </mappers>
+</configuration>

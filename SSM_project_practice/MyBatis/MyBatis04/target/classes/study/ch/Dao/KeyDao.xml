@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="study.ch.Dao.KeyDao">
+
+    <!--查lock的简单方法,查寻key的事后可用带上lock的信息-->
+    <select id="getKeyByIdEasy" resultMap="mykey02">
+        select * from t_key where id=#{id}
+    </select>
+    <resultMap id="mykey02" type="study.ch.Bean.Key">
+        <id property="id" column="id"/>
+        <result property="KeyName" column="keyname"/>
+        <!--告诉mybatis自己调用查询去查-->
+        <!--指定一个查询sql的唯一标识，mybatis会自动调用指定的sql将查出来的lock封装进来-->
+        <!--需传入参数，告诉mybatis把那一列的值传递过去,也就是key中的lockid=lock中的id，这是在key.xml中配置所以只能写lockid-->
+        <!--fetchType设置分布查询的延迟加载：eager表示提前记载好，调用部分属性性时所有sql语句执行，lazy延时加载，当被调用时才执行-->
+        <association property="lock"
+                     select="study.ch.Dao.LockDao.getLockByIdEasy" column="lockid" fetchType="eager"></association>
+    </resultMap>
+
+
+
+    <select id="getKeyById" resultMap="mykey01">
+        <!--l.`id` lid给lock表的id取别名-->
+        SELECT k.`id`,k.`keyname`,k.`lockid`,
+        l.`id` lid,l.`lockname` FROM `t_key` k
+        LEFT JOIN `t_lock` l
+        ON k.`lockid`=l.`id`
+        WHERE k.`id`=#{id}
+    </select>
+    <!--方式一：自定义封装规则,使用级联属性封装查询出来的结果-->
+    <!--resultMap id="mykey" type="study.ch.Bean.Key"-->
+        <!--id property="id" column="id"/-->
+        <!--result property="KeyName" column="keyname"/-->
+        <!--result property="lock.id" column="lockid"/>
+        <!-result property="lock.LockName" column="lockname"/-->
+    <!--/resultMap-->
+    <!--使用mybatis推荐的<association>-->
+    <resultMap id="mykey01" type="study.ch.Bean.Key">
+        <id property="id" column="id"/>
+        <result property="KeyName" column="keyname"/>
+        <!--接下来定义的属性为对象，association表示联合了一个对象-->
+        <!--javaType指定属性的类型-->
+        <association property="lock" javaType="study.ch.Bean.Lock">
+            <!--定义lock这个属性的lock对象如何封装-->
+            <id property="id" column="lid"/>
+            <result property="LockName" column="lockname"/>
+        </association>
+    </resultMap>
+</mapper>
